@@ -13,10 +13,11 @@ pipeline {
         echo 'Approved'
       }
     }
-    stage('Finally')
+    stage('Finally') {
       steps {
         echo input('Shall I Approve your Changes?')
         echo  'yes'
       }
+    }
   }
 }
