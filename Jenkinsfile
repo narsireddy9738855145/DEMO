@@ -10,6 +10,7 @@ pipeline {
     stage('Proceed') {
       steps {
         echo input('Do you want to proceed?')
+        echo 'Approved'
       }
     }
   }
